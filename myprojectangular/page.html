@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="survey-container">
+    <h1>Survey Form</h1>
+    <form id="surveyForm">
+        <div class="form-group">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="age">Age:</label><br>
+            <input type="number" id="age" name="age" min="18" required>
+        </div>
+        
+        <div class="form-group">
+            <label>Gender:</label><br>
+            <div class="gender-options">
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="place">Place:</label><br>
+            <select id="place" name="place" required>
+                <option value="">Select</option>
+                <option value="urban">Kochi</option>
+                <option value="suburban">Pathanamthitta</option>
+                <option value="rural">Trivandrum</option>
+            </select>
+        </div>
+
+
+        <div class="form-group">
+            <label>Which is your area of interest?</label><br>
+            <div class="checkbox-group">
+                <input type="checkbox" id="Development" name="language[]" value="Development">
+                <label for="Development">Development</label>
+                
+                <input type="checkbox" id="Testing" name="language[]" value="Testing">
+                <label for="Testing">Testing</label>
+                
+                <input type="checkbox" id="Designing" name="language[]" value="Designing">
+                <label for="Designing">Designing</label>
+
+                <input type="checkbox" id="javascript" name="language[]" value="Others">
+                <label for="Others">Others</label>
+            </div>
+        </div>
+        
+        
+        <div class="form-group">
+            <label for="feedback">Feedback:</label><br>
+            <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea>
+        </div>
+        
+        
+        
+        
+        <div class="form-group">
+            <label for="fileUpload">Submit your resume:</label><br>
+            <input type="file" id="fileUpload" name="fileUpload">
+        </div>
+        
+        <div class="form-group">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
